@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="118dp"
+        android:layout_height="22dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="4dp"
+        android:text="ব্যালান্স ট্রান্সফার"
+        android:textColor="#212121"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="টাকার পরিমান"
+            android:textColor="#212121"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="48dp"
+            android:text="তারিখ"
+            android:textColor="#212121"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/balance_date_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:id="@+id/total_amount_linear"
+            android:layout_width="166dp"
+            android:layout_height="44dp"
+            android:background="@drawable/total_amount_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="৳ ১,০০০"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/date_linear"
+            android:layout_width="166dp"
+            android:layout_height="44dp"
+            android:background="@drawable/total_amount_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_time" />
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="4dp"
+                android:text="১৯ অক্টোবর"
+                android:textColor="#212121"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/present_account_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/present_balance_account_bg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balance_date_constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="20dp"
+                android:text="বর্তমান একাউন্ট"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:text="(যেই একাউন্ট থেকে টাকা পাঠাচ্ছেন)"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bikas_bg"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:text="বিকাশ"
+                android:textColor="#212121"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="220dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_right_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_present_balance" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="বর্তমান ব্যালান্স:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="61dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="158dp"
+                android:gravity="center"
+                android:text="৳ ১,০০০০"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="ট্রান্সফারের পর ব্যালান্স:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="67dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="132dp"
+                android:gravity="center"
+                android:text="৳ ৯,০০০"
+                android:textStyle="bold"
+                android:textColor="#FD4755"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transfer_account_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/transfer_account_bg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/present_account_linear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:text="ট্রান্সফার একাউন্ট"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:text="(যেই একাউন্টে টাকা যাচ্ছে)"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bikas_transfer_bg"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:text="বিকাশ"
+                android:textColor="#212121"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="220dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_right_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_present_balance" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="বর্তমান ব্যালান্স:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="61dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="158dp"
+                android:gravity="center"
+                android:text="৳ ১,০০০০"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="ট্রান্সফারের পর ব্যালান্স:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="114dp"
+                android:gravity="center"
+                android:text="৳ ১১,০০০০"
+                android:textColor="#11A21B"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="66dp"
+        android:layout_height="24dp"
+        android:layout_margin="16dp"
+        android:text="নোট/ মন্তব্য"
+        android:textColor="#212121"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transfer_account_linear" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment">
+
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="318dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/comment_bg"
+            android:hint="মন্তব্য"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#9E9E9E"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/gallery_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/ic_gallery" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="সেভ করুন"
+        android:textSize="16sp"
+        android:layout_margin="16dp"
+        android:textColor="#9E9E9E"
+        android:background="@drawable/button_bg"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
