@@ -2,4 +2,21 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="Button1">#FFD4D7</color>
+    <color name="Button2">#CAE6FF</color>
+    <color name="Button3">#C8FFD4</color>
+
+    <color name="PrimaryColor100">#FFF8E1</color>
+    <color name="PrimaryColor200">#FFECB3</color>
+    <color name="PrimaryColor300">#FFE57F</color>
+
+
+    <color name="TertiaryColor100">#EBF6FE</color>
+    <color name="TertiaryColor300">#1E88E5</color>
+    <color name="TertiaryColor200">#90CAF9</color>
+    <color name="TertiaryColor400">#1565C0</color>
+
+    <color name="Tertiaryalert">#FD4755</color>
+    <color name="Tertiarygreen">#11A21B</color>
 </resources>

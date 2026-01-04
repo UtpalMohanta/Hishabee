@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_balance_transfer"
         android:layout_width="118dp"
         android:layout_height="22dp"
         android:layout_margin="16dp"
@@ -19,12 +19,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/balance_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance_transfer">
 
         <TextView
             android:layout_width="82dp"
@@ -52,25 +52,19 @@
         android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/balance_linear">
 
-        <LinearLayout
-            android:id="@+id/total_amount_linear"
+        <TextView
             android:layout_width="166dp"
             android:layout_height="44dp"
             android:background="@drawable/total_amount_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:text="৳ ১,০০০"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:paddingLeft="8dp"
-                android:text="৳ ১,০০০"
-                android:textSize="14sp" />
-        </LinearLayout>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/date_linear"
@@ -348,7 +342,7 @@
         app:layout_constraintTop_toBottomOf="@+id/transfer_account_linear" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/comment_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -384,6 +378,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="সেভ করুন"
@@ -391,6 +386,6 @@
         android:layout_margin="16dp"
         android:textColor="#9E9E9E"
         android:background="@drawable/button_bg"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/comment_linear" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

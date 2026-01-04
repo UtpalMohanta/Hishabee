@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Hishabee</string>
+    <string name="total_balance">মোট ব্যালান্স:</string>
+    <string name="amount">১,০০০</string>
+    <string name="all_account">সকল একাউন্ট:</string>
+    <string name="account_name">ক্যাশ</string>
+    <string name="new_account">নতুন একাউন্ট</string>
+    <string name="btn_cash_out">ক্যাশ আউট</string>
 </resources>
